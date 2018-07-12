@@ -8,7 +8,7 @@
   position: fixed;
   right: 0;
   bottom: 0;
-  min-height: 100%;
+  min-height: 100vh;
   min-width: 100%;
   z-index: -1;
 }
@@ -40,11 +40,15 @@
 
 .main-heading {
   
-  width: 40vw;
+  max-width: 700px;
   font-size: 3em;
   color: whitesmoke;
   font-weight: lighter;
   text-align: center;
+}
+
+.main-heading span {
+  font-weight: bold
 }
 
 /* MEDIA QUERY : HEADING */
@@ -55,7 +59,7 @@
   }
 }
 
-@media (max-width:600px) {
+@media (max-width:750px) {
   .main-heading {
     
     font-size: 2.5em;
@@ -97,10 +101,52 @@
   
   background-color: white;
   color: black;
+  transition: all 300ms ease-in-out;
+}
+
+/* MEDIA QUERIES */
+@media (max-width:750px) {
+  .call-to-action {
+    
+      flex-flow: column nowrap;
+      align-content: center;
+  }
+  
+  .cta {
+    margin: 0;
+  }
+  .call-to-action :nth-child(2) {
+    margin: 50px 0 0 0;
+  }
 }
 
 /* FOOTER */
 
 footer {
+    position: fixed;
+    bottom: 0;
+    left: calc(50% - 10px);
+    
+    margin-bottom: 50px;
+}
+
+.button-down {
+  transform: scale(2.5);
+  color: ghostwhite;
   
+  /* animation */
+  
+  animation-name: up-down;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes up-down {
+  0% {
+    margin-bottom: 50px;
+  }
+  100% {
+    margin-bottom: 25px;
+  }
 }
