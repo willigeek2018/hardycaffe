@@ -5,18 +5,13 @@
   <meta charset="UTF-8">
   <title>Caffe Hardy | Homepage</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="form.css">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
 
-  <!-- video -->
-  
-  <video autoplay muted loop id="myVideo">
-    <source src="images/coffee-bean-mixing.mp4" type="video/mp4">
-    Your browser does not support HTML5 video.
-  </video>
  
   <!-- Header -->
   
@@ -24,32 +19,68 @@
   <header>
    
     <div class="logo">
-      <img src="images/CH_Logo.jpg" alt="Cafe Hardy logo" width="125">
+      <a href="/"><img src="images/CH_Logo.jpg" alt="Cafe Hardy logo" width="125"></a>
     </div>
     
     <div class="menu">
      
-      <a href="#"><img src="images/CH_Menu.png" alt=""></a>
+      <a href=""><img src="images/CH_Menu2.png" alt=""></a>
     </div>
     
   </header>
   
   <!-- Main -->
   
-  <main class="container">
-    <h1 class="main-heading">Since 1954, <br> Caffe Hardy has been part of innovation & craftmanship in Milan.</h1>
+  <main>
     
-    <div class="call-to-action">
-      <a href="" class="cta">become a hardy cafe</a>
-      <a href="" class="cta">buy coffee</a>
+    <div class="form_container">
+        
+        <h5>REDESIGN YOUR BAR WITH CAFE HARDY</h5>
+        <h1>POST YOUR BAR PROJECT</h1>
+        <p class="paragraph_width">Tell us what you need done and we will get the right team for the job.</p>
+        
+        <div class="form">
+          <form>
+
+            <label>Project Name</label>
+            <input type="text" placeholder=" Bar name, Interior design">
+
+            <label>Project Description</label>
+            <textarea placeholder="Describe your project here…" style="height:200px"></textarea>
+            
+            <div class="upload">
+                
+                <p class="upload_btn"><span class="plus">+</span> Upload Files</p>
+                
+                <p class="upload_paragraph">Drag and drop any files that might be helpful
+                in explaning your project brief here.</p>
+                
+            </div>
+            
+             <label>Skills required</label>
+             <div class="skills">
+                 <p class="skill_btn"><span class="plus">×</span> Architect</p>
+                 <p class="skill_btn"><span class="plus">×</span> Interior designer</p>
+                 <p class="skill_btn"><span class="plus">×</span> Visual designer</p>
+                 
+             </div>
+             
+             <label>Duration</label>
+            <input type="text" placeholder=" How long this post is valid ?">
+
+            <button>POST PROJECT</button>
+
+          </form>
+        </div>
+        
     </div>
+    
+    
   </main>
   
   <!-- Footer -->
   
-  <footer>
-    <i class="material-icons">arrow_downward</i>
-  </footer>
+  
   
 </body>
 </html>
