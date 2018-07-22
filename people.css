@@ -1,0 +1,23 @@
+#bgimage {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-height: 100vh;
+  min-width: 100%;
+  z-index: -1;
+}
+
+.color {
+    width: 600px;
+    
+    line-height: 1.5em;
+    color: #fff;
+}
+
+.width {
+    width: 300px;
+}
+
+.cta_people {
+    position: absolute;
+}

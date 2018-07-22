@@ -1,3 +1,21 @@
-body {
+body {    
     background-color: #F5F5F5;
+}
+
+.product_display {
+    margin-top: 50vh;
+    background-color: #fff;
+}
+
+.pdp_img {
+    width: 600px;
+    height: 600px;
+    
+    
+    border: 2px solid red;
+    
+}
+
+img {
+    width: 100%;
 }
