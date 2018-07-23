@@ -1,0 +1,28 @@
+
+.projectPage {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-gap: 5px;
+}
+
+@media (max-width: 1050px){
+    .projectPage {
+        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(5,1fr);
+    }
+    .project-card {
+        width: 500px;
+    }
+}
+@media (max-width: 900px){}
+@media (max-width: 640px){}
+
+.project-card {
+    border: 2px solid green;
+}
+
+.project-image img {
+    width: 100%;
+}
+
