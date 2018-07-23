@@ -18,7 +18,7 @@
 .main-menu {
   position: fixed;
   top: 0;
-  left: 50%;
+  left: 65%;
   right: 0;
   bottom: 0;
   
@@ -29,6 +29,68 @@
   transform: translateX(100%);
   transition: transform 300ms ease-out;
 }
+
+.menuItems {
+  border: 1px solid red;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menuItems ul{
+  list-style: none;
+  padding: 0;
+}
+
+.menuItems ul li {
+
+}
+
+.menuItems ul li a {
+  display: inline-block;
+
+  text-decoration: none;
+  font-size: 2em;
+  padding: 15px 30px 15px 70px;
+  font-weight: 100;
+  
+  color: #707070;
+  text-transform: uppercase;
+}
+
+.upperMenuItem{
+  font-size: .4em;
+  letter-spacing: 4px;
+  font-weight: 300;
+  
+  color: #cc8759;
+}
+
+.patternHardy{
+  height: 20vh;
+
+  background-image: url(images/patterns.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.main-menu button {
+  border: 2px solid #664e4c;
+  padding: 15px 25px;
+  font-size: 1.2em;
+  color: #664e4c;
+  
+  border-radius: 2px;
+  
+  transition: all 300ms ease-in-out;
+}
+
+.main-menu button:hover {
+  background-color: #664e4c;
+  color: white;
+}
+
 
 .main-menu.open-menu {
   transform: translateX(0);

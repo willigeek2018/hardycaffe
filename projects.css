@@ -78,6 +78,7 @@ h2,h3,h4 {
 }
 
 .cta {
+  background-color: white;
   width: 100%;
   display: inline-block;
   border: 2px solid #4E4E4E;
@@ -94,12 +95,13 @@ h2,h3,h4 {
   letter-spacing: 2px;
   
   margin-top: 50px;
+  
+  transition: all 300ms ease-in-out;
 }
 
 .cta:hover {
   
   background-color: #4E4E4E;
   color: white;
-  transition: all 300ms ease-in-out;
 }
 
