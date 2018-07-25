@@ -13,6 +13,31 @@ header {
     margin-left: 50px;
 }
 
+h1, h2, h3, h4, h5, h6, p {
+    margin: 10px;
+    color: #4E4E4E;
+}
+
+h5 {
+    font-size: .8em;
+    font-weight: 300;
+    letter-spacing: .5em;
+    color: #CC8759;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: lighter;
+    
+}
+
+.paragraph_width {
+    width: 400px;
+    
+    font-size: 1em;
+    font-weight: normal;
+}
+
 .form {
     margin-top: 100px;
     margin-left: 10px;
