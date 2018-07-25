@@ -3,6 +3,11 @@
     font-family: 'Helvetica Neue',sans-serif;
 }
 
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
 body {
     position: relative;
     margin: 0 auto;
