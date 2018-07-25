@@ -62,9 +62,9 @@ body {
   color: #cc8759;
 }
 
-.patternHardy{
+.patternHardy {
   height: 25vh;
-  background-image: url(images/patterns.svg);
+  background-image: url(/images/patterns.svg);
   background-size: cover;
 }
 
