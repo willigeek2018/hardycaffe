@@ -4,13 +4,15 @@
 <head>
   <meta charset="UTF-8">
   <title>Caffe Hardy | EUROPA</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="pdp.css">
+  <link rel="stylesheet" href="/pdp.css">
+  <link rel="stylesheet" href="navigation.css">
+  <link rel="stylesheet" href="plp.css">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
+     
   <!-- hidden menu -->
   <nav class="main-menu" id="mainMenu">
    
@@ -20,15 +22,13 @@
     </button>
     
     <!-- content of the menu -->
-    <section class="menuItems">
-      <ul>
-        <li><a href="#"><span class="upperMenuItem">the coffee of Milan </span><br>Caffe Hardy</a></li>
-        <li><a href="/plp.html"><span class="upperMenuItem">Buy our coffee</span> <br> Hardy's store</a></li>
-        <li><a href="/people.html"><span class="upperMenuItem">Design collaboration</span><br> Hardy's culture</a></li>
-        <li><a href=""><span class="upperMenuItem">Find us</span><br> Bars & retailers</a></li>
-        <li><a href=""><span class="upperMenuItem">Businesses</span><br> Hardy's ambassadorr</a></li>
-      </ul>
-    </section>
+    <ul class="menuItems">
+      <li><a href=""><span class="upperMenuItem">the coffee of Milan </span><br>Caffe Hardy</a></li>
+      <li><a href=""><span class="upperMenuItem">Buy our coffee</span> <br> Hardy's store</a></li>
+      <li><a href=""><span class="upperMenuItem">Design collaboration</span><br> Hardy's culture</a></li>
+      <li><a href=""><span class="upperMenuItem">Find us</span><br> Bars & retailers</a></li>
+      <li><a href=""><span class="upperMenuItem">Businesses</span><br> Hardy's ambassador</a></li>
+    </ul>
     
     <div class="patternHardy">
       <!-- background in css -->
@@ -36,77 +36,66 @@
     
   </nav>
   
-  
- 
-  <!-- Header -->
-  
+  <!-- HEADER -->
   
   <header>
    
     <div class="logo">
-      <a href="/"><img src="images/CH_Logo.jpg" alt="Cafe Hardy logo" width="125"></a>
+      <img src="images/CH_Logo.jpg" alt="Cafe Hardy logo" width="100">
     </div>
     
     <div class="menu" id="menuButton">
-      <a href="#"><img src="images/CH_Menu2.png" alt=""></a>
+      <a href="#"><img src="/images/menu-icon-dark.svg" alt=""></a>
     </div>
     
   </header>
   
-  <!-- Main -->
+  <!-- MAIN CONTENT -->
   
   <main>
-    
-    <div class="product_display">
-        
-        <div class="pdp_img"></div>
-        
-        <div class="pdp_details">
-        <artile>
-          
-          <div class="pdp_name_price margins">
-          <h1>EUROPA</h1>
-          <h3>€ 25.99</h3>
-          </div>
-          
-          <p class="pdp_disc margins">A compact cream with a toned color of friar captures the sight. The aroma is intense and enthralling with hints of dried toasted fruit and fresh wood on the nose</p>
-          
-          <div class="margins2">
-           <div class="coffee-intensity">
-                   <div class="intensity-indicator"><h5>Strongs</h5></div>
-           </div>
-          </div> 
-           
-           <p>Origin : Honduras Brazil</p>
-           <p>Certified : Bioagricert</p>
-           
-           <div class="pdp_coffe_grams margins">
-              <img src="/images/cup-icon.svg" alt="coffe-icon" width="18px">
-              <p class="pdp_cup_details">12 cups | <em>250g</em></p>
-           </div>
-           
-           <div class="input-quantity margins2">
-              <button type="button" class="quantity-change">-</button>
-                <input type="text" value="01" class="qty-in-field">
-              <button type="button" class="quantity-change">+</button>
-            </div>
-            
-            <a href="" class="cta">add to cart</a>
-         
-        </artile>
-        
-        
+    <div class="product-display">
+     
+      <div class="product-img">
+        <img src="images/coffee-europe.png" alt="Coffee Europa">
+      </div>
+      
+      <article class="product-details">
+        <div class="details-header">
+          <h1 class="product-name">Europa</h1>
+          <h2 class="product-price">€ 20.90</h2>
         </div>
+        
+        <p>A compact cream with a toned color of friar captures the sight. The aroma is intense and enthralling with hints of dried toasted fruit and fresh wood on the nose</p>
+        
+        <!-- Coffee intensity : see CSS -->
+        
+        <div class="coffee-intensity">
+          <div class="intensity-indicator"></div>
+        </div>
+        
+        <div class="ori-cert">
+          <h3>Origin : Honduras . Brazil</h3>
+          <h3>Certification : Bioagricert</h3>
+        </div>
+        
+        <p>12 cups : 250g</p>
+        
+        <!-- input field -->
+        
+        <div class="quantity-field">
+          <button type="button">-</button>
+          <input type="text" value="01">
+          <button type="button">+</button>
+        </div>
+        
+        <a href="#" class="cta-pdp">add to cart</a>
+        
+      </article>
+      
     </div>
-    
-       <a href="#" class="subscribe margins2">Buy at Subscription</a>
-    
   </main>
   
-  <!-- Footer -->
-  
-  
   <!-- Include the JS -->
-  <script src="script.js"></script>
+  <script src="/script.js"></script>
 </body>
 </html>
