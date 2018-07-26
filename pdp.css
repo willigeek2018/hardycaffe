@@ -54,6 +54,7 @@
 @media (max-width: 1050px) {
   .product-display {
     flex-flow: column nowrap;
+    align-items: center;
     padding: 25px;
   }
 }

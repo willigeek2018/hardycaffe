@@ -2,11 +2,6 @@ html {
     background-color: #EFEFEF;
 }
 
-header {
-  position: fixed;
-  top: 0;
-}
-
 .form_container {
     margin: 0;
     margin-top: 300px;
