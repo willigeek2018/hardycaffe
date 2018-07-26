@@ -43,6 +43,7 @@
 /* MAIN CONTENT STYLE */
 
 .product-display {
+    height: 80vh;
   margin-top: 150px;
   display: flex;
   flex-flow: row nowrap;
