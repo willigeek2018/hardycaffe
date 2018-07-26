@@ -147,11 +147,6 @@ button:hover {
     transition: all 300ms ease-in-out;
 }
 
-
-
-
-
-
-
-
-
+.arrow {
+  color: #4E4E4E;
+}
