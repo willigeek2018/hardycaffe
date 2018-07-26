@@ -16,6 +16,7 @@
 /* Main Menu */
 
 .main-menu {
+  height: 100vh;
   position: fixed;
   top: 0;
   left: 65%;
@@ -26,31 +27,45 @@
   
   background: #fff;
   
-  transform: translateX(100%);
+  transform: translateX(115%);
   transition: transform 300ms ease-out;
+  
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5,1fr);
+  grid-gap: 25px;
+  
+  box-shadow: 0px 0px 5px rgba(0,0,0,.3);
+}
+
+@media (max-width:640px){
+  .main-menu {
+    left: 20%;
+  }
+  .menuItems {
+    padding-left: 25px;
+  }
 }
 
 .menuItems {
-  border: 1px solid red;
-  height: 80vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-.menuItems ul{
   list-style: none;
-  padding: 0;
+  margin: 0;
+  
+  grid-row: 2/5;
+  padding-left: 25px;
+  
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
 }
 
-.menuItems ul li a {
+.menuItems li a {
   display: inline-block;
 
   text-decoration: none;
-  font-size: 2em;
-  padding: 15px 30px 15px 70px;
+  font-size: 1.5em;
   font-weight: 100;
-  
   color: #707070;
   text-transform: uppercase;
 }
@@ -63,18 +78,17 @@
   color: #cc8759;
 }
 
-.patternHardy{
-  height: 20vh;
-
+.patternHardy {
   background-image: url(images/patterns.svg);
   background-size: cover;
-  background-repeat: no-repeat;
+  
+  grid-row: 5/6;
 }
 
 .main-menu button {
   border: 2px solid #664e4c;
-  padding: 15px 25px;
-  font-size: 1.2em;
+  padding: 10px 20px;
+  font-size: 1em;
   color: #664e4c;
   
   border-radius: 2px;
@@ -97,13 +111,31 @@
 .logo {
   position: fixed;
   top: 0;
-  left: 50px;
+  left: 25px;
 }
 
 .menu {
+  text-align: right;
+  
   position: fixed;
-  top: 75px;
-  right: 50px;
+  top: 25px;
+  right: 25px;
+}
+
+.menu img {
+  width: 35%;
+  transition: all 300ms ease-in-out;
+}
+.menu img:hover {
+  opacity: .7;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 150px;
+  z-index: 20;
 }
 
 /* Main */
