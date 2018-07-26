@@ -26,6 +26,10 @@ h1 {
     
 }
 
+ul {
+    list-style: none;
+}
+
 .paragraph_width {
     width: 400px;
     
